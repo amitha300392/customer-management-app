@@ -1,0 +1,10 @@
+<div class="container">
+  <h2>Add Customer</h2>
+  <form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input id="name" formControlName="name">
+    <label for="email">Email:</label>
+    <input id="email" formControlName="email">
+    <button type="submit" [disabled]="customerForm.invalid">Add Customer</button>
+  </form>
+</div>

@@ -1,0 +1,8 @@
+ng new customer-management-app
+cd customer-management-app
+ng add @angular/material
+ng add @angular/common@latest
+ng generate component customer-list
+ng generate component customer-detail
+ng generate component add-customer
+ng generate service customer

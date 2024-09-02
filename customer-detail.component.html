@@ -1,0 +1,8 @@
+<div class="container">
+  <h2>Customer Details</h2>
+  <div *ngIf="customer">
+    <p>Name: {{ customer.name }}</p>
+    <p>Email: {{ customer.email }}</p>
+    <button (click)="editCustomer()">Edit</button>
+  </div>
+</div>

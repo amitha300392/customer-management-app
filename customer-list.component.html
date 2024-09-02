@@ -1,0 +1,8 @@
+<div class="container">
+  <h2>Customer List</h2>
+  <div *ngFor="let customer of customers" class="customer-card">
+    <h3>{{ customer.name }}</h3>
+    <button (click)="viewCustomer(customer.id)">View Details</button>
+    <button (click)="deleteCustomer(customer.id)">Delete</button>
+  </div>
+</div>
